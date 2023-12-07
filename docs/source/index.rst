@@ -20,4 +20,6 @@ Contents
 .. toctree::
 
    usage
-   api
+   trees
+   heaps
+   graphs
