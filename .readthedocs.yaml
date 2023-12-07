@@ -1,25 +1,22 @@
-project:
-  name: cpgetools
-  version: 0.0.4
-  authors:
-    - name: Zouhair El Hadiq
-      email: zouhairelhadiq@gmail.com
-  description: CPGE Fast Algorithmes for verification
-  readme: README.md
-  requires-python: ">=3.8"
-  classifiers:
-    - "Programming Language :: Python :: 3"
-    - "License :: OSI Approved :: MIT License"
-    - "Operating System :: OS Independent"
-  dynamic:
-    - dependencies
-  urls:
-    Homepage: https://github.com/elhadiq/pedagogic-library
-    Issues: https://github.com/elhadiq/pedagogic-library/issues
-tool:
-  setuptools:
-    dynamic:
-      dependencies:
-        file:
-          - requirements.txt
+# .readthedocs.yaml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
+# Required
+version: 2
+
+# Set the version of Python and other tools you might need
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.11"
+
+# Build documentation in the docs/ directory with Sphinx
+sphinx:
+  configuration: docs/conf.py
+
+# We recommend specifying your dependencies to enable reproducible builds:
+# https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
+# python:
+#   install:
+#   - requirements: docs/requirements.txt
