@@ -1,0 +1,3 @@
+[submodule "cpgetoolsdocs"]
+	path = cpgetoolsdocs
+	url = git@github.com:elhadiq/cpgetoolsdocs.git
